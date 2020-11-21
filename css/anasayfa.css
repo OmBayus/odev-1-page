@@ -1,0 +1,39 @@
+/*Main*/
+
+#main{
+      text-align: center;
+      margin: 0 0 100px 0;
+}
+
+#main h1{
+      color: white;
+      font-size: 5rem;
+      font-weight: 600;
+      padding-top: 2rem;
+      width: 50%;
+      margin: 0 auto;
+      letter-spacing: 5px;
+}
+
+.main-image{
+      margin-top: 4rem;
+      border-radius: 10px;
+      max-width: 100%;
+}
+
+/* Responsive Tasarım */
+
+@media only screen and (max-width: 900px) {
+
+      #main h1{
+            font-size: 3rem;
+      }
+}
+
+@media only screen and (max-width: 600px) {
+
+      #main h1{
+            font-size: 1.5rem;
+      }
+      
+}

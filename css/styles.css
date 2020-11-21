@@ -1,0 +1,207 @@
+/*Genel*/
+
+*{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+}
+
+body{
+      /* background: linear-gradient(230deg, rgb(75, 207, 147), rgb(75, 121, 207), rgb(162, 75, 207)) 0% 0% / 300% 300%; */
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 23, 15, 0.65))), url("../img/bg-image.jpg");
+      height: 60rem;
+      /* animation: colors 30s ease infinite; */
+}
+
+/* @keyframes colors {
+      0% {background-position:0% 50%}
+      50% {background-position:100% 50%}
+      100% {background-position:0% 50%}
+} */
+
+/*header*/
+
+header{
+      height: 100px;
+}
+
+.logo{
+      margin: 0 auto;
+      width: 25%;
+      text-align: center;
+      padding: 20px;
+}
+
+.logo img{
+      width: 50px;
+      height: 50px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+      #icon {
+        animation: logo-spin infinite 20s linear;
+      }
+    }
+
+
+    @keyframes logo-spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+
+
+/*navbar*/
+
+nav{
+      background-color: black;
+      opacity: 0.7;
+}
+nav ul{
+      list-style: none;
+      text-align: center;
+
+}
+
+nav ul li{
+      display: inline-block;
+      margin: 25px 0 0 0;
+      width: 15%;
+      height: 50px;
+      overflow: auto;
+}
+
+nav ul li a{
+      text-decoration: none;
+      color:white;
+      font-size: 1.2rem;
+      opacity: 1;
+      transition: all .2s;
+}
+
+nav ul li a:hover{
+      opacity: 0.8;
+      color: rgb(0, 110, 255);
+}
+
+/*Footer*/
+
+footer{
+      background-color: black;
+      opacity: 0.7;
+      height: 100px;
+      overflow: hidden;
+}
+
+
+footer ul{
+      list-style: none;
+}
+
+footer ul li{
+      display: inline-block;
+}
+
+
+.copyright{
+      width: 50%;
+      padding: 40px 0 0 0;
+      color: white;
+      font-size: 1.3rem;
+      font-weight: 100;
+      text-align: center;
+}
+
+footer ul a:hover{
+      color: blue;
+}
+
+footer ul li a{
+      text-decoration: none;
+      color: white;
+      transition: color .2s;
+}
+
+footer img{
+      height: 30px;
+      width: 30px;
+}
+
+.social-icons{
+      float: right;
+      position: relative;
+      top: 30px;
+      width: 50%;
+      text-align: center;
+}
+
+.social-icons a{
+      display: inline-block;
+      background: white;
+      height: 50px;
+      width: 50px;
+      margin: 0 2rem;
+      text-align: center;
+      padding-top: 10px;
+      border-radius: 50%;
+      transition: background .2s;
+}
+
+.facebook:hover{
+      background:linear-gradient(120deg, #3b5998, #FFFFFF);
+}
+
+.twitter:hover{
+      background:linear-gradient(45deg, #66757f, #00ACEE, #36D8FF, #f5f8fa, #ffffff);
+}
+
+.instagram:hover{
+      background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+
+}
+
+
+/* Responsive Tasarım */
+
+
+@media only screen and (max-width: 900px) {
+
+      nav ul li {
+            width: 100%;
+      }
+      
+}
+
+@media only screen and (max-width: 750px) {
+
+
+      .copyright{
+            font-size: 1.1rem;
+      }
+
+      .social-icons a{
+            height: 40px;
+            width: 40px;
+            padding-top: 5px;
+      }
+
+      
+}
+
+@media only screen and (max-width: 650px) {
+      
+      .social-icons{
+            display: none;
+      }
+
+      .copyright{
+            width: 100%;
+      }
+
+
+      
+}
